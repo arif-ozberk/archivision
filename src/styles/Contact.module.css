@@ -1,0 +1,77 @@
+:root {
+    --black: #272927;
+    --gold: #ffb700;
+    --dark-gold: #e4a403;
+    --white: #f5f5f5;
+    --gray: #dddddd;
+}
+
+
+.mainContainer {
+    background-image: url("../images/contact-img.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.contactCard {
+    background-color: var(--white);
+    height: 230px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--black);
+}
+
+.contactCard:nth-child(2) {
+    background-color: var(--gold);
+}
+
+.contactCard i {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.contactCard h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contactCard p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+@media(max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .contactCard {
+        width: 80%;
+        height: 200px;
+    }
+}
+
+@media(max-width: 550px) {
+    .contactCard {
+        width: 100%;
+    }
+
+    .contactCard h2 {
+        font-size: 1.3rem;
+    }
+
+    .contactCard p {
+        font-size: 1rem;
+    }
+}

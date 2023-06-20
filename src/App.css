@@ -1,0 +1,41 @@
+/* Variables */
+:root {
+    --black: #272927;
+    --gold: #ffb700;
+    --dark-gold: #e4a403;
+    --white: #f5f5f5;
+    --gray: #dddddd;
+}
+
+
+/* Main Containers */
+
+
+
+.App {
+    height: fit-content;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.backToTop {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 30px;
+    right: 30px;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    z-index: 100;
+}
+
+.backToTop:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}

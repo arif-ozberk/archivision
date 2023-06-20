@@ -1,0 +1,232 @@
+:root {
+    --black: #272927;
+    --gold: #ffb700;
+    --dark-gold: #e4a403;
+    --white: #f5f5f5;
+    --gray: #dddddd;
+}
+
+.mainContainer {
+    background-color: var(--gray);
+    padding: 80px 16%;
+    height: fit-content;
+    text-align: center;
+}
+
+.mainContainer h1 {
+    margin-bottom: 30px;
+    font-size: 3.6rem;
+    color: var(--black);
+}
+
+.mainContainer h1 span {
+    color: var(--gold);
+}
+
+.mainContainer .titleText {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.5vw;
+}
+
+.cardRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoCard {
+    background-color: var(--gold);
+    color: var(--black);
+    width: 30%;
+    height: calc(68vw * 30 / 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.infoCardText {
+    padding: 20px;
+}
+
+.infoCardText h2 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.infoCardText p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.infoCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.9);
+    transition: scale 0.3s ease;
+    cursor: pointer;
+}
+
+.infoCard img:hover {
+    scale: 1.1;
+}
+
+
+@media(max-width: 1600px) {
+
+    .infoCard h2 {
+        font-size: 1.2rem;
+    }
+
+    .infoCard p {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 1360px) {
+
+    .mainContainer {
+        padding: 80px 8%;
+    }
+
+    .infoCard {
+        height: calc(84vw * 30 / 100);
+    }
+
+    .infoCardText h2 {
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    .mainContainer {
+        padding: 80px 5%;
+    }
+
+    .infoCard {
+        height: calc(90vw * 30 / 100);
+    }
+
+    .mainContainer h1 {
+        font-size: 3rem;
+    }
+
+    .mainContainer .titleText {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 950px) {
+
+    .cardRow {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .infoCard {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cardContainer {
+        row-gap: 30px;
+    }
+
+    .infoCardText h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .infoCardText p {
+        font-size: 1rem;
+    }
+
+    .infoCardText {
+        padding: 30px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .infoCard {
+        width: 100%;
+    }
+
+    .infoCardText h2 {
+        margin-bottom: 10px;
+    }
+
+    .mainContainer h1 {
+        font-size: 2.8rem;
+    }
+
+    .mainContainer .titleText {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 600px) {
+    
+    .infoCard {
+        height: 180px;
+    }
+
+    .infoCardText {
+        padding: 15px;
+    }
+
+    .infoCardText h2 {
+        font-size: 1.2rem;
+    }
+
+    .infoCardText p {
+        font-size: 0.9rem;
+    }
+
+    .mainContainer h1 {
+        font-size: 2.3rem;
+    }
+
+    .mainContainer .titleText {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 490px) {
+
+    .mainContainer h1 {
+        font-size: 2rem;
+    }
+
+    .infoCard {
+        height: 200px;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .mainContainer h1 {
+        font-size: 1.8rem;
+    }
+
+    .mainContainer .titleText {
+        font-size: 0.9rem;
+    }
+
+    .infoCardText p {
+        font-size: 0.8rem;
+    }
+}
+

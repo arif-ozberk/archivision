@@ -1,0 +1,260 @@
+:root {
+    --black: #272927;
+    --gold: #ffb700;
+    --dark-gold: #e4a403;
+    --white: #f5f5f5;
+    --gray: #dddddd;
+}
+
+.mainContainer {
+    height: 100vh;
+    position: relative;
+    background-image: url("../images/welcome-page-img.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.welcomeContext {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 92vh;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.welcomeTop {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.welcomeTitle {
+    color: var(--gold);
+    font-size: 4rem;
+}
+
+.welcomeText {
+    color: var(--white);
+    font-size: 1.4rem;
+    padding-right: 30%;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.welcomeBottom {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcomeCard {
+    background-color: #1e1f1e5e;
+    backdrop-filter: blur(2px);
+    width: 30%;
+    height: fit-content;
+    padding: 50px 40px;
+    position: relative;
+}
+
+.welcomeCard h2 {
+    font-size: 1.4rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.welcomeCard p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #c0c0c0;
+    margin-bottom: 20px;
+}
+
+.welcomeCard a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--white);
+    border: 2px solid var(--gold);
+    width: 180px;
+    height: 50px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.welcomeCard a:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.welcomeCard i {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    font-size: 4rem;
+    color: var(--gold);
+}
+
+
+@media(max-width: 1440px) {
+
+    .welcomeTop h1 {
+        font-size: 3rem;
+    }
+
+    .welcomeTop p {
+        font-size: 1.1rem;
+    }
+
+    .welcomeCard h2 {
+        font-size: 1.2rem;
+    }
+
+    .welcomeCard p {
+        font-size: 1rem;
+    }
+
+    .welcomeCard a {
+        font-size: 1.1rem;
+        width: 160px;
+    }
+
+    .welcomeCard i {
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    .mainContainer {
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+
+    .welcomeContext {
+        height: fit-content;
+    }
+
+    .welcomeTop {
+        flex: auto;
+        padding: 80px 0 60px 0;
+    }
+
+    .welcomeTop p {
+        padding-right: 15%;
+    }
+
+    .welcomeBottom {
+        flex: auto;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 30px;
+    }
+
+    .welcomeCard {
+        width: 70%;
+        padding: 30px 40px;
+    }
+
+    .welcomeCard h2 {
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .welcomeTop h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcomeTop p {
+        padding: 0;
+    }
+
+    .welcomeCard {
+        width: 100%;
+    }
+
+    .welcomeCard a {
+        font-size: 1rem;
+        height: 40px;
+        width: 140px;
+    }
+}
+
+@media(max-width: 622px) {
+
+    .welcomeTop p {
+        font-size: 1rem;
+    }
+
+    .welcomeTop h1 {
+        font-size: 2rem;
+    }
+
+    .welcomeCard h2 {
+        font-size: 1.1rem;
+    }
+
+    .welcomeCard p {
+        font-size: 0.9rem;
+    }
+
+    .welcomeCard {
+        padding: 20px 40px;
+    }
+
+    .welcomeCard i {
+        font-size: 2.7rem;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .welcomeTop h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcomeTop p {
+        font-size: 0.9rem;
+    }
+
+    .welcomeTop {
+        padding-bottom: 40px;
+        padding-top: 60px;
+    }
+
+    .welcomeCard {
+        padding: 20px 25px;
+    }
+
+    .welcomeCard h2 {
+        font-size: 1rem;
+    }
+
+    .welcomeCard p {
+        font-size: 0.8rem;
+    }
+
+    .welcomeCard a {
+        font-size: 0.9rem;
+        height: 35px;
+        width: 130px;
+    }
+
+    .welcomeCard i {
+        right: 25px;
+        top: 20px;
+        font-size: 2.4rem;
+    }
+}
+
+

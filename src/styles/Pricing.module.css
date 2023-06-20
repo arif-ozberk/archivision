@@ -1,0 +1,173 @@
+:root {
+    --black: #272927;
+    --gold: #ffb700;
+    --dark-gold: #e4a403;
+    --white: #f5f5f5;
+    --gray: #dddddd;
+}
+
+
+.mainContainer {
+    background-color: var(--gray);
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.mainContainer .mainTitle {
+    color: var(--black);
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+}
+
+.seperator {
+    width: 180px;
+    height: 7px;
+    background-color: var(--gold);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.mainContainer h3 {
+    color: var(--black);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.mainContainer h4 {
+    font-weight: 400;
+}
+
+.pricingContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 25px;
+}
+
+.pricingCard {
+    background-color: var(--gold);
+    height: 450px;
+    width: 300px;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricingCard h2 {
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 15px 0;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.pricingCard h1 {
+    width: 100%;
+    font-weight: 800;
+    font-size: 4rem;
+    padding-bottom: 15px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.pricingCard ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 30px 0 50px;
+}
+
+.pricingCard ul li {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.pricingCard a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid var(--black);
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--black);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pricingCard a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+@media(max-width: 1024px) {
+    .mainContainer .mainTitle {
+        font-size: 3.2rem;
+    }
+
+    .seperator {
+        width: 120px;
+    }
+
+    .mainContainer h3 {
+        font-size: 1.2rem;
+    }
+
+    .pricingCard {
+        height: 400px;
+    }
+
+    .pricingCard h2 {
+        font-size: 1.3rem;
+    }
+
+    .pricingCard h1 {
+        font-size: 3.5rem;
+    }
+
+    .pricingCard ul {
+        margin-bottom: 40px;
+    }
+
+    .pricingCard ul li {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 850px) {
+    .pricingContainer {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+
+@media(max-width: 450px) {
+    .pricingCard {
+        width: 270px;
+    }
+
+    .mainContainer .mainTitle {
+        font-size: 2.8rem;
+    }
+
+    .mainContainer h3 {
+        font-size: 1.1rem;
+    }
+
+    .mainContainer h4 {
+        font-size: 0.8rem
+    }
+}
+
+@media(max-width: 350px) {
+    .mainContainer .mainTitle {
+        font-size: 2.6rem;
+    }
+}

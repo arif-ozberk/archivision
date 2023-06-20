@@ -1,0 +1,102 @@
+:root {
+    --black: #272927;
+    --gold: #ffb700;
+    --dark-gold: #e4a403;
+    --white: #f5f5f5;
+    --gray: #dddddd;
+}
+
+.mainContainer {
+    padding: 80px 5%;
+    height: 400px;
+    background-image: url("../images/stat-img.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    row-gap: 16px;
+}
+
+.statCard i {
+    color: var(--gold);
+    font-size: 2.5rem;
+}
+
+.statCard h1 {
+    color: var(--white);
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.statCard p {
+    color: var(--gold);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+@media(max-width: 1440px) {
+    .mainContainer {
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 1200px) {
+    .mainContainer {
+        height: 320px;
+    }
+
+    .statCard i {
+        font-size: 2rem;
+    }
+
+    .statCard h1 {
+        font-size: 3.5rem;
+    }
+
+    .statCard p {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .mainContainer {
+        height: 280px;
+    }
+
+    .statCard i {
+        font-size: 1.8rem;
+    }
+
+    .statCard h1 {
+        font-size: 3rem;
+    }
+
+    .statCard p {
+        font-size: 1rem;
+    }
+
+    .statCard {
+        width: 115px;
+    }
+}
+
+@media(max-width: 600px) {
+    .mainContainer {
+        flex-direction: column;
+        height: fit-content;
+        row-gap: 40px;
+    }
+
+    .statCard {
+        row-gap: 10px;
+    }
+}

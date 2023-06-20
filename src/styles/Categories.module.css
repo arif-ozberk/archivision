@@ -1,0 +1,210 @@
+:root {
+    --black: #272927;
+    --gold: #ffb700;
+    --dark-gold: #e4a403;
+    --white: #f5f5f5;
+    --gray: #dddddd;
+}
+
+
+.mainContainer {
+    background-image: url("../images/categories-img.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.mainContainer .mainTitle {
+    color: var(--white);
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+}
+
+.mainContainer p {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.mainContainer .mainTitle span {
+    color: var(--gold);
+}
+
+.categoriesCont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.categoriesRow {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.categoryCard {
+    height: 350px;
+    width: 35%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoryCard img {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 30px;
+    border: 3px solid var(--black);
+}
+
+.categoryCard h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.mainContainer h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-top: 30px;
+}
+
+.mainContainer a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--white);
+    width: 180px;
+    height: 50px;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 40px auto 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mainContainer a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+@media(max-width: 1570px) {
+    .categoryCard {
+        width: 40%;
+    }
+}
+
+@media(max-width: 1440px) {
+    .categoryCard {
+        width: 230px;
+        height: 310px;
+    }
+
+    .categoryCard h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 1120px) {
+    .categoryCard {
+        width: 200px;
+        height: 260px;
+    }
+
+    .categoryCard img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .mainContainer p {
+        font-size: 1.2rem;
+    }
+
+    .mainContainer .mainTitle {
+        font-size: 3.2rem;
+    }
+
+    .mainContainer h4 {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 920px) {
+    .categoriesCont {
+        flex-direction: column;
+        row-gap: 35px;
+        align-items: center;
+    }
+
+    .categoriesRow {
+        width: 100%;
+    }
+
+    .categoryCard {
+        width: 45%;
+    }
+}
+
+@media(max-width: 630px) {
+    .mainContainer .mainTitle {
+        font-size: 2.8rem;
+    }
+
+    .mainContainer p {
+        font-size: 1rem;
+    }
+
+    .mainContainer h4 {
+        font-size: 0.9rem;
+    }
+
+    .categoryCard h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 530px) {
+    .mainContainer .mainTitle {
+        font-size: 2.5rem;
+    }
+
+    .categoriesRow {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .categoriesCont {
+        row-gap: 30px;
+    }
+
+    .categoryCard {
+        width: 80%;
+        height: 220px;
+    }
+
+    .categoryCard img {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 475px) {
+    .mainContainer .mainTitle {
+        font-size: 2rem;
+    }
+
+    .mainContainer p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,45 @@
+:root {
+    --black: #272927;
+    --gold: #ffb700;
+    --dark-gold: #e4a403;
+    --white: #f5f5f5;
+    --gray: #dddddd;
+}
+
+.mainContainer {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    color: var(--white);
+    padding:  35px 0;
+}
+
+.mainContainer p span {
+    color: var(--gold);
+}
+
+.socials {
+    display: flex;
+    column-gap: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+    transition: transform 0.2s ease, scale 0.2s ease, color 0.2s ease;
+}
+
+.socials a:hover {
+    transform: translateY(-5px);
+    scale: 0.9;
+    color: var(--gold);
+}
+
+@media(max-width: 425px) {
+    .mainContainer p {
+        font-size: 0.9rem;
+    }
+}
