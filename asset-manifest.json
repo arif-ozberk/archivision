@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/archivision/static/css/main.f417821b.css",
+    "main.js": "/archivision/static/js/main.b2ba60d2.js",
+    "static/media/categories-img.jpg": "/archivision/static/media/categories-img.7b0419b1ed674d2d07d9.jpg",
+    "static/media/stat-img.jpg": "/archivision/static/media/stat-img.a11f642e48c8566aac75.jpg",
+    "static/media/contact-img.jpg": "/archivision/static/media/contact-img.86bf8dcf54f35df9d518.jpg",
+    "static/media/welcome-page-img.jpg": "/archivision/static/media/welcome-page-img.5fd0570f91f8b0c2149d.jpg",
+    "static/media/logo-gold.png": "/archivision/static/media/logo-gold.b138666e6acc0e225a2d.png",
+    "index.html": "/archivision/index.html",
+    "main.f417821b.css.map": "/archivision/static/css/main.f417821b.css.map",
+    "main.b2ba60d2.js.map": "/archivision/static/js/main.b2ba60d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f417821b.css",
+    "static/js/main.b2ba60d2.js"
+  ]
+}
